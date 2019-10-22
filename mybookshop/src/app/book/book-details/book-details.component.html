@@ -1,0 +1,27 @@
+<div class="container pt-5">
+  <div class="row pt-5">
+    <div class="col-4">
+      <mat-card>
+          <img mat-card-image [src]="book.image" alt="">
+        <mat-card-content>
+            <button mat-raised-button color="warn" >Buy Now</button><button mat-raised-button color="primary" class="ml-2" >Add to Cart</button>
+        </mat-card-content>        
+      </mat-card>
+    </div>
+    <div class="col-8">
+      <p class="text-muted">Home > books > schoolBooks ></p>
+      <h3>{{book.title}} </h3>
+      <p>rating of book</p>
+      <h3>Description </h3>
+      <p>{{book.description}}</p>
+      <h2> &#8377; {{book.price}}<span class="text-muted"><del><small>&#8377; 720</small></del></span></h2>
+      <ul>Hurry, Only 3 left
+        <li>No cost Emi on Flipkart axis Bank Credit Card</li>
+        <li>Combo offer buy2 items save 5%; Buy 3 save 10%; Buy 4+ save 15%</li>
+        <li>Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit Card</li>
+        <li>Bank Offer 5% Cashback on HDFC Bank Debit Cards</li>
+      </ul>
+      <p>author name : {{book.author}}</p>
+    </div>
+  </div>
+</div>

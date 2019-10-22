@@ -1,0 +1,33 @@
+<mat-card class="my-3" [routerLink]="['bookdetails',bookindex]">
+  <img mat-card-image [src]="book.image" alt=""  style="max-height: 250px">
+  <mat-card-content>
+    <mat-card-title>
+      <h6 class="text-truncate">{{book.title}}</h6>
+    </mat-card-title>
+    <mat-card-subtitle class="text-muted text-truncate">
+      {{book.description}}
+    </mat-card-subtitle>
+  </mat-card-content>
+  <mat-card-footer >
+      <!-- <button mat-icon-button  color="warn">
+          <mat-icon>favorite</mat-icon>
+      </button> -->
+  </mat-card-footer>
+  <mat-divider></mat-divider>
+  <mat-card-actions>
+    <button mat-icon-button  color="warn">
+          <mat-icon>favorite</mat-icon>
+      </button>
+  </mat-card-actions>
+</mat-card>
+<!-- <div class="card my-3">
+  <div class="card-header">
+    <h4> card title</h4>
+  </div>
+  <div class="card-body">
+    this. is a head
+  </div>
+  <div class="card-footer">
+    footer
+  </div>
+</div> -->

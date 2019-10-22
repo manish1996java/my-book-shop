@@ -1,0 +1,24 @@
+.custom-container{
+    width: 100%;
+    height: 100vh;
+}
+.card{
+    width: 350px;
+}
+p{
+    font-size: 12px;
+}
+.backgroudimg{
+    background-image: url("../../../assets/images/authbg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+input.ng-valid.ng-touched{
+    border: 1px solid rgb(1, 198, 1);
+}
+input.ng-touched.ng-invalid{
+    border: 1px solid red;
+}
+.height-sm{
+    padding: 0.1px 2px;
+}

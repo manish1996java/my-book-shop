@@ -1,0 +1,16 @@
+
+.bg-footer{
+    background-color: #111111;
+    padding-bottom: 120px;
+}
+.custom-padding{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.soc-icons:hover{
+    background-color: white;
+    color: #111111;
+}
+.bottom-footer{
+    padding: 120px 0px 40px 0px ; 
+}

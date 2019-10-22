@@ -1,0 +1,62 @@
+<div class="">
+    <app-invisblenav></app-invisblenav>
+    <div class="login backgroudimg">
+      <div class="row justify-content-center align-items-center custom-container">
+          <div class="card text-center border-0">
+              <div class="card-body text-capitalize">        
+                  <form (ngSubmit)="onSubmit()" [formGroup]="form">
+                        <h2>login</h2>
+                        <p class="mb-0 pt-3">welcome back! login to access the sweet marketplace.</p>
+                        <p class="pb-3">did you <a class="text-primary" href="#">forget your password?</a></p>
+                            <!-- <div class="my-4">
+                                    <mat-form-field appearance="outline" class="w-100">
+                                            <mat-label>username</mat-label>
+                                            <input matInput placeholder="username">
+                                            <mat-icon matSuffix>account_circle</mat-icon>
+                                    </mat-form-field>
+                                    <mat-form-field appearance="outline" class="w-100">
+                                            <mat-label>password</mat-label>
+                                            <input matInput placeholder="password"  password>
+                                            
+                                            <mat-icon matSuffix>vpn_key</mat-icon>
+                                    </mat-form-field>
+                            </div> -->
+                         <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepand">
+                                    <span class="input-group-text"><i class="fas fa-user py-1"></i></span>
+                                </div>
+                                <input 
+                                type="text" 
+                                class="form-control" 
+                                placeholder="username"
+                                formControlName="userName"
+                                >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepand">
+                                    <span class="input-group-text"><i class="fas fa-lock py-1"></i></span>
+                                </div>
+                                <input 
+                                class="form-control" 
+                                type="password" 
+                                placeholder="Password"
+                                formControlName="password"
+                                >
+                            </div> 
+                        </div>
+                        
+                        <button mat-raised-button type="submit" class="w-100" color="primary" [disabled]="!this.form.valid" ><i class="fas fa-arrow-circle-right pr-3"></i>Sign In</button>
+                        <button type="button" class="form-control bg-primary text-white mt-1"><i class="fab fa-facebook-f mr-3"></i><span>Sign Up With Facebook</span></button>
+                        <button type="button" class="form-control bg-danger text-white mt-1"><i class="fab fa-google-plus-g mr-3"></i><span>Sign Up With Gmail</span></button>  
+                        
+                        <p [routerLink]="['/signup']" class="my-4 d-inline-block text-primary text-capitalize" style="cursor: pointer">Creat an Account</p>
+                    
+                    </form>
+              </div>
+          </div>
+      </div>
+    </div>
+</div>

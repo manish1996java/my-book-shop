@@ -1,0 +1,29 @@
+<mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{book.title}}
+      </mat-panel-title>
+      <mat-panel-description>
+        {{book.price}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+      <div class="container">
+          <div class="row border">
+              <div class="col">
+                  <div class="content mt-3">
+                      <h2>Description</h2>
+                      <p>{{book.description}}</p>
+                      <h4>Author Name</h4>
+                      <p>{{book.author}}</p>
+                  </div>
+              </div>
+              <div class="col">
+                  <img [src]="book.image" alt="" style="max-width: 200px;">
+              </div>
+            </div>
+      </div>  
+    <mat-action-row>
+      <button mat-button color="primary" (click)="update()">Update</button>
+      <button mat-button color="warn" (click)="delete()">Delete</button>
+    </mat-action-row>
+</mat-expansion-panel>

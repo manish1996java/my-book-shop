@@ -1,0 +1,15 @@
+.custom-container{
+    width: 100%;
+    height: 100vh;
+}
+.card{
+    width: 350px;
+}
+p{
+    font-size: 12px;
+}
+.backgroudimg{
+    background-image: url("../../../assets/images/authbg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
